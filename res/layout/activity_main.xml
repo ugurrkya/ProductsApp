@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeMainAct"
+    android:background="#D3D3D3"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerProducts"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/view_pager"
+        android:background="#C1BDBD"
+
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+
+
+        />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/dotsIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                app:dotsColor="#808080"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="10dp"
+                app:dotsWidthFactor="2.0"
+                app:progressMode="true"
+                app:selectedDotColor="#0000c8" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>
+
+</layout>

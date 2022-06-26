@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ProductsApp</string>
+    <string name="countOfPricesText">%1$s satıcı</string>
+    <string name="followCountText">%1$s takip</string>
+    <string name="productPriceText">%1$s TL</string>
+    <string name="dropRatioText">\%%%1$s</string>
+    <string name="capacityOptionsText">Kapasite Seçenekleri</string>
+    <string name="freeShippingText">Ücretsiz Kargo</string>
+    <string name="lastUpdateText">Son Güncelleme: %1$s</string>
+    <string name="countOfPricesDetailText">%1$s satıcı içinde kargo dahil en ucuz fiyat seçeneği</string>
+</resources>

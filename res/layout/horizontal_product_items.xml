@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/horizontalRelativeListItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="40dp"
+    android:background="@drawable/custom_horizontal_background">
+
+
+
+
+    <ImageView
+        android:id="@+id/horizontalProductImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+android:adjustViewBounds="true"
+        android:layout_marginBottom="20dp"
+        android:src="@color/dark_purple" />
+    <RelativeLayout
+        android:id="@+id/discountRate"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/horizontalProductImage"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/circle_shape"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/discountTextHR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/horizontalProductImage"
+
+        android:gravity="start"
+        android:letterSpacing="-0.005"
+        android:lineSpacingExtra="-2dp"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColor="#7F7FFF"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/horizontalProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productName"
+
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/horizontalProductImage"
+        android:layout_marginTop="5dp"
+        android:gravity="start"
+        android:letterSpacing="-0.005"
+        android:lineSpacingExtra="-2dp"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/horizontalCountOfPrices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontalProductPrice"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/horizontalProductImage"
+        android:layout_marginTop="5dp"
+        android:gravity="start"
+        android:letterSpacing="-0.005"
+        android:lineSpacingExtra="-2dp"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColor="#A9A9A9"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/icon_arrow_h"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/horizontalProductPrice"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@id/horizontalCountOfPrices"
+        android:src="@drawable/right_arrow" />
+
+
+    <TextView
+        android:id="@+id/horizontalFollowCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontalCountOfPrices"
+
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/horizontalProductImage"
+
+        android:gravity="bottom|start"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColor="#A9A9A9"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

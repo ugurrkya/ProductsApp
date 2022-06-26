@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/relativeProductsDetail"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        tools:context=".view.ProductDetailActivity">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/mainRelative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/topRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/brandName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:letterSpacing="-0.005"
+                        android:lineSpacingExtra="-2dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="#7F7FFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/productRating"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="3"
+                        android:stepSize="0.1"
+                        android:theme="@style/RatingBar" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/productName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/topRelative"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:letterSpacing="-0.005"
+                    android:lineSpacingExtra="-2dp"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/badgeRelative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productName"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#CAC07C"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/productBadge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="start"
+                        android:letterSpacing="-0.005"
+                        android:lineSpacingExtra="-2dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/productImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badgeRelative"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:adjustViewBounds="true"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="fitCenter" />
+
+                <RelativeLayout
+                    android:id="@+id/capacityRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productImage"
+                    android:layout_marginTop="10dp"
+                    android:background="#4DE6E6E6">
+
+
+                    <TextView
+                        android:id="@+id/capacityOptionText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/capacityOptionsText"
+
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/capacityOptionText"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="20dp"
+                        android:weightSum="3">
+
+
+                        <Button
+                            android:id="@+id/capacityOptionOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/button_border"
+                            android:text=""
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/capacityOptionTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_border"
+                            android:text=""
+                            android:layout_margin="3dp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/capacityOptionThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_border"
+                            android:text=""
+                            android:layout_margin="3dp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/countOfPricesText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/capacityRelative"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:letterSpacing="-0.005"
+                    android:lineSpacingExtra="-2dp"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/priceText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/countOfPricesText"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:letterSpacing="-0.005"
+                    android:lineSpacingExtra="-2dp"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/freeShippingText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/priceText"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+
+                    android:visibility="invisible"
+                    android:letterSpacing="-0.005"
+                    android:lineSpacingExtra="-2dp"
+                    android:text="@string/freeShippingText"
+                    android:textAllCaps="false"
+                    android:textColor="#32CD32"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lastUpdateText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/freeShippingText"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:letterSpacing="-0.005"
+                    android:lineSpacingExtra="-2dp"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="#A9A9A9"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+</layout>
